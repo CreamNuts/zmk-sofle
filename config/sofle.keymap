@@ -13,7 +13,7 @@
 
 / {
     behaviors {
-        mo_tog: behavior_mo_tap {
+        mot: behavior_mo_tap {
             compatible = "zmk,behavior-hold-tap";
             label = "MO_TAP";
             #binding-cells = <2>;
