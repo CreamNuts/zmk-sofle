@@ -9,7 +9,7 @@
 #include <dt-bindings/zmk/bt.h>
 
 &mt {
-    quick-tap-ms = <200>;
+    quick-tap-ms = <150>;
     tapping-term-ms = <300>;
     flavor = "tap-preferred";
 };
@@ -28,6 +28,7 @@
             compatible = "zmk,behavior-tap-dance";
             label = "TAP_DANCE_0";
             #binding-cells = <0>;
+            quick-tap-ms = <150>;
             tapping-term-ms = <300>;
             bindings = <&kp N9>, <&kp LBKT>;
         };
@@ -35,6 +36,7 @@
             compatible = "zmk,behavior-tap-dance";
             label = "TAP_DANCE_1";
             #binding-cells = <0>;
+            quick-tap-ms = <150>;
             tapping-term-ms = <300>;
             bindings = <&kp N0>, <&kp RBKT>;
         };
@@ -42,6 +44,7 @@
             compatible = "zmk,behavior-tap-dance";
             label = "TAP_DANCE_2";
             #binding-cells = <0>;
+            quick-tap-ms = <150>;
             tapping-term-ms = <300>;
             bindings = <&kp MINUS>, <&kp EQUAL>;
         };
@@ -49,6 +52,7 @@
             compatible = "zmk,behavior-tap-dance";
             label = "TAP_DANCE_3";
             #binding-cells = <0>;
+            quick-tap-ms = <150>;
             tapping-term-ms = <300>;
             bindings = <&kp HOME>, <&kp PG_UP>;
         };
@@ -56,6 +60,7 @@
             compatible = "zmk,behavior-tap-dance";
             label = "TAP_DANCE_4";
             #binding-cells = <0>;
+            quick-tap-ms = <150>;
             tapping-term-ms = <300>;
             bindings = <&kp END>, <&kp PG_DN>;
         };
@@ -79,7 +84,7 @@
                     &kp LGUI     &kp LALT     &kp LCTRL   &kp SPACE   &kp BSPC   &kp TAB   &kp RET    &kp LANG1    &kp LANG2     &kp RGUI
             >;
 
-            sensor-bindings = <&inc_dec_kp C_VOL_UP C_VOL_DN &inc_dec_kp PG_UP PG_DN>;
+            sensor-bindings = <&inc_dec_kp C_VOL_DN C_VOL_UP &inc_dec_kp PG_UP PG_DN>;
         };
 
         lower_layer {
@@ -97,7 +102,7 @@
                         &trans       &trans       &trans       &trans    &trans   &trans   &trans    &trans   &trans    &trans
             >;
 
-            sensor-bindings = <&inc_dec_kp C_VOL_UP C_VOL_DN &inc_dec_kp PG_UP PG_DN>;
+            sensor-bindings = <&inc_dec_kp C_VOL_DN C_VOL_UP &inc_dec_kp PG_UP PG_DN>;
         };
 
         raise_layer {
@@ -116,7 +121,7 @@
                     &trans    &trans      &trans    &trans  &trans   &trans   &trans    &trans     &trans    &trans
             >;
 
-            sensor-bindings = <&inc_dec_kp C_VOL_UP C_VOL_DN &inc_dec_kp PG_UP PG_DN>;
+            sensor-bindings = <&inc_dec_kp C_VOL_DN C_VOL_UP &inc_dec_kp PG_UP PG_DN>;
         };
     };
 };
