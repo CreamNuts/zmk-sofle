@@ -51,7 +51,7 @@
             label = "TAP_DANCE_4";
             #binding-cells = <0>;
             tapping-term-ms = <200>;
-            bindings = <&kp END>, <&kp PG_DN>;-
+            bindings = <&kp END>, <&kp PG_DN>;
         };
     };
 
