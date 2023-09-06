@@ -51,7 +51,7 @@
             label = "TAP_DANCE_4";
             #binding-cells = <0>;
             tapping-term-ms = <200>;
-            bindings = <&kp END>, <&kp PG_DN>;
+            bindings = <&kp END>, <&kp PG_DN>;-
         };
     };
 
@@ -70,7 +70,7 @@
 &kp DEL   &kp Q     &kp W        &kp E        &kp R       &kp T                            &kp Y      &kp U        &kp I         &kp O         &kp P       &kp BSPC
 &kp CLCK  &mot 2 A  &mt LCTRL S  &mt LSHFT D  &mt LALT F  &mt LGUI G                       &mt ESC H  &mt LALT J   &mt LSHFT K   &mt LCTRL L   &mot 1 SEMI &kp SQT
 &kp LSHFT &kp Z     &kp X        &kp C        &kp V       &kp B       &kp C_MUTE &none     &kp N      &kp M        &kp COMMA     &kp DOT       &kp FSLH    &kp RSHFT
-                    &kp LGUI     &kp LALT     &kp LCTRL   &kp SPACE   &kp BSPC   &kp TAB   &kp RET    &kp RCTRL    &kp RALT      &kp RGUI
+                    &kp LGUI     &kp LALT     &kp LCTRL   &kp SPACE   &kp BSPC   &kp TAB   &kp RET    &kp LANG1    &kp LANG2     &kp RGUI
             >;
 
             sensor-bindings = <&inc_dec_kp C_VOL_UP C_VOL_DN &inc_dec_kp PG_UP PG_DN>;
